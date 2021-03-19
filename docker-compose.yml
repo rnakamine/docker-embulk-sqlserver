@@ -3,6 +3,5 @@ version: "3.8"
 services:
   embulk:
     build: .
-    tty: true
     volumes:
       - .:/work
