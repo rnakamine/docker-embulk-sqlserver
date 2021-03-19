@@ -3,8 +3,7 @@ This repository is a sample using sqlserver plugin with embulk on docker.
 
 ## Usage
 
-### Sample Configuration
-config.yml
+Sample Configuration (config.yml)
 ```yml
 in:
   type: sqlserver
@@ -27,7 +26,12 @@ out:
   mode: insert
 ```
 
-### Run Embulk
+You can run embulk from docker-compose
 ```sh
 $ docker-compose run --rm embulk run config.yml
 ```
+
+### Plugin to use
+Please refer to here for detailed settings
+- [embulk\-input\-jdbc/embulk\-input\-sqlserver at master · embulk/embulk\-input\-jdbc](https://github.com/embulk/embulk-input-jdbc/tree/master/embulk-input-sqlserver)
+- [embulk\-output\-jdbc/embulk\-output\-sqlserver at master · embulk/embulk\-output\-jdbc](https://github.com/embulk/embulk-output-jdbc/tree/master/embulk-output-sqlserver)
