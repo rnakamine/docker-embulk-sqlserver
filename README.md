@@ -1,5 +1,5 @@
 # docker-embulk-sqlserver
-This repository is a sample using sqlserver plugin with embulk for docker.
+This repository is a sample using sqlserver plugin with embulk, it works on Docker.
 
 ## Usage
 
