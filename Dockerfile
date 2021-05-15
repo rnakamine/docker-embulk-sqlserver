@@ -7,7 +7,8 @@ RUN wget -q https://dl.embulk.org/embulk-${EMBULK_VERSION}.jar -O /usr/local/bin
 RUN apk add --no-cache libc6-compat \
     && embulk gem install \
     embulk-input-sqlserver \
-    embulk-output-sqlserver
+    embulk-output-sqlserver \
+    embulk-filter-column
 
 ENV TZ=Asia/Tokyo
 

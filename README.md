@@ -16,6 +16,12 @@ in:
   where: "col4 != 'a'"
   order_by: "col1 DESC"
 
+filters:
+  - type: column
+    columns:
+      - {name: col1}
+      - {name: col2}
+
 out:
   type: sqlserver
   host: localhost
@@ -35,3 +41,4 @@ $ docker-compose run --rm embulk run config.yml
 Please refer to here for detailed settings
 - [embulk\-input\-jdbc/embulk\-input\-sqlserver at master · embulk/embulk\-input\-jdbc](https://github.com/embulk/embulk-input-jdbc/tree/master/embulk-input-sqlserver)
 - [embulk\-output\-jdbc/embulk\-output\-sqlserver at master · embulk/embulk\-output\-jdbc](https://github.com/embulk/embulk-output-jdbc/tree/master/embulk-output-sqlserver)
+- [sonots/embulk\-filter\-column: A filter plugin for Embulk to filter out columns](https://github.com/sonots/embulk-filter-column)

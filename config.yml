@@ -9,6 +9,12 @@ in:
   where: "col4 != 'a'"
   order_by: "col1 DESC"
 
+filters:
+  - type: column
+    columns:
+      - {name: col1}
+      - {name: col2}
+
 out:
   type: sqlserver
   host: localhost
